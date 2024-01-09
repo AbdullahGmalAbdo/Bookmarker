@@ -1,0 +1,22 @@
+
+body {
+  background-color: #F7ECDE;
+}
+.text-title-bg {
+  width: 250px;
+  height: 80px;
+  margin: auto;
+  position: relative;
+  transition: 0.5s all;
+}
+.text-title {
+  height: 70px;
+  margin: auto;
+  color : #352E28;
+  color:RGB(53, 46, 40);
+  font-family: 'Pacifico', cursive;
+  font-size:50px;
+  line-height:60px;
+  margin:0px 0px 8px;
+  font-weight:  300;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC&family=Montserrat:wght@100&family=Pacifico&family=Poppins:wght@900&family=Roboto:ital@0;1&family=Source+Sans+3&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+</head>
+<body>
+<section class="container text-center py-3 my-3">
+    <div class="text-title-bg">
+        <h1 class="text-title">Bookmarker</h1>
+        
+    </div>
+    <hr style="border-top-style: dashed;">
+    <div class="contain">
+        <h3 class="my-3"> <i style="color:#47A55A" class="fa-solid fa-bookmark"></i> <span style="color:#47A55A">Bookmark your </span><span style="color:#6EA855">favorite sites</span> <i style="color:#B2AC49" class="fa-solid fa-bookmark " style="color:#19d1f1"></i></h3>
+        <form class="text-start" >
+            <label for="SiteName"><i class="fa-solid fa-floppy-disk "></i> Site Name</label>
+            <input type="text" id="SiteName" oninput="NameValidation()" class="form-control  my-3" placeholder="BookMark Name" />
+            <label for="SiteUrl" ><i class="fa-solid fa-link"></i>   Site URL</label>
+            <input type="url" id="SiteUrl" class="form-control  my-3" oninput="UrlValidation()"  name="SiteUrl" data-fv-string-length___min="6" data-fv-string-length___message="The name must be more than 6 characters long"   data-fv-not-empty___message="The username is required" class="form-control text-start  my-3" name="url" pattern="https://.*" placeholder="website url" required title="Requires https://" required/>
+        </form>
+        <button class="btn btn-primary w-25  btn-moved" onclick="creat()" type="button" id="btn" >Submit</button>
+
+    </div>
+    <hr style="border-top-style: dashed;">
+
+    <div>
+        <table class="table mt-5 text-center">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="talbeRow">
+              
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<script src="js/first.js"></script>
+</body>
+</html>
